@@ -514,7 +514,7 @@
       <div class="upload-area" id="upload-area">
         <i class="fas fa-cloud-upload-alt upload-icon"></i>
         <h3>拖放图片到此处上传</h3>
-        <p>支持 JPG, PNG, GIF, WEBP 等格式，最大支持 10MB</p>
+        <p>支持 JPG, PNG, GIF, WEBP 等格式，最大支持 5MB</p>
         <button class="btn" id="select-btn">选择图片</button>
         <input type="file" id="file-input" accept="image/*">
       </div>
@@ -704,7 +704,7 @@
               const randomId = Math.random().toString(36).substring(2, 10);
               const date = new Date();
               const dateStr = `${date.getFullYear()}/${String(date.getMonth()+1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`;
-              imageUrl.value = `https://noah-cdn.4ce.cn/images/${dateStr}/${randomId}.${file.name.split('.').pop()}`;
+              imageUrl.value = `https://cf.im.noah0932.top/images/${dateStr}/${randomId}.${file.name.split('.').pop()}`;
               
               showNotification('图片上传成功！', 'success');
             }, 300);
