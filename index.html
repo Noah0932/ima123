@@ -4,27 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-  <title>Noah公益图床--CF版</title>
+  <title>Noah公益图床</title>
   <meta name="keywords" content="Noah公益图床,免费图床,图片托管">
   <meta name="description" content="Noah公益图床 - 提供免费的图片托管服务">
   <meta property="og:description" content="Noah公益图床 - 提供免费的图片托管服务">
-  <meta property="og:site_name" content="Noah公益图床--CF版">
-  <meta property="og:title" content="Noah公益图床--CF版">
-  <meta property="og:url" content="https://cf.im.noah0932.top">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕊️</text></svg>">
+  <meta property="og:site_name" content="Noah公益图床">
+  <meta property="og:title" content="Noah公益图床">
+  <meta property="og:url" content="https://wp-cdn.4ce.cn">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌄</text></svg>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
-      --primary: #4a9df7;
-      --primary-dark: #3a87d7;
-      --secondary: #6c5ce7;
-      --dark-bg: #1a202c;
-      --card-bg: rgba(30, 41, 59, 0.6);
+      --primary: #4a6cf7;
+      --primary-dark: #3a57c7;
+      --secondary: #5e72e4;
+      --dark-bg: #121826;
+      --card-bg: #1e293b;
       --text: #e2e8f0;
-      --text-secondary: #a0aec0;
-      --success: #48bb78;
-      --danger: #e53e3e;
-      --border-radius: 14px;
+      --text-secondary: #94a3b8;
+      --success: #10b981;
+      --danger: #ef4444;
+      --border-radius: 12px;
       --transition: all 0.3s ease;
       --shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     }
@@ -37,7 +37,7 @@
     }
     
     body {
-      background: linear-gradient(135deg, var(--dark-bg) 0%, #0f172a 100%);
+      background: linear-gradient(135deg, #0f172a 0%, var(--dark-bg) 100%);
       color: var(--text);
       min-height: 100vh;
       padding: 20px;
@@ -56,7 +56,7 @@
       align-items: center;
       padding: 20px 0;
       margin-bottom: 30px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .logo {
@@ -96,7 +96,7 @@
     
     nav a:hover, nav a.active {
       color: var(--text);
-      background: rgba(74, 157, 247, 0.15);
+      background: rgba(74, 108, 247, 0.1);
     }
     
     .hero {
@@ -105,18 +105,17 @@
     }
     
     .hero h2 {
-      font-size: 2.8rem;
+      font-size: 42px;
       margin-bottom: 20px;
       line-height: 1.2;
       font-weight: 700;
     }
     
     .hero p {
-      font-size: 1.2rem;
+      font-size: 20px;
       color: var(--text-secondary);
       max-width: 700px;
       margin: 0 auto 40px;
-      font-weight: 300;
     }
     
     .upload-container {
@@ -126,12 +125,11 @@
       margin: 30px auto;
       max-width: 800px;
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
     
     .upload-area {
-      border: 2px dashed rgba(255, 255, 255, 0.15);
+      border: 2px dashed rgba(255, 255, 255, 0.1);
       border-radius: var(--border-radius);
       padding: 60px 30px;
       text-align: center;
@@ -142,7 +140,7 @@
     
     .upload-area:hover, .upload-area.dragover {
       border-color: var(--primary);
-      background: rgba(74, 157, 247, 0.08);
+      background: rgba(74, 108, 247, 0.05);
     }
     
     .upload-icon {
@@ -152,15 +150,13 @@
     }
     
     .upload-area h3 {
-      font-size: 1.8rem;
+      font-size: 24px;
       margin-bottom: 15px;
-      font-weight: 600;
     }
     
     .upload-area p {
       color: var(--text-secondary);
       margin-bottom: 25px;
-      font-size: 1.1rem;
     }
     
     .btn {
@@ -174,14 +170,14 @@
       border: none;
       cursor: pointer;
       transition: var(--transition);
-      font-size: 1rem;
-      box-shadow: 0 4px 15px rgba(74, 157, 247, 0.3);
+      font-size: 16px;
+      box-shadow: 0 4px 15px rgba(74, 108, 247, 0.3);
     }
     
     .btn:hover {
       background: var(--primary-dark);
       transform: translateY(-2px);
-      box-shadow: 0 7px 20px rgba(74, 157, 247, 0.4);
+      box-shadow: 0 7px 20px rgba(74, 108, 247, 0.4);
     }
     
     .btn-outline {
@@ -194,7 +190,7 @@
     .btn-outline:hover {
       background: var(--primary);
       color: white;
-      box-shadow: 0 4px 15px rgba(74, 157, 247, 0.3);
+      box-shadow: 0 4px 15px rgba(74, 108, 247, 0.3);
     }
     
     #file-input {
@@ -214,8 +210,7 @@
       padding: 30px;
       text-align: center;
       transition: var(--transition);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
       box-shadow: var(--shadow);
     }
     
@@ -231,23 +226,20 @@
     }
     
     .feature-card h3 {
-      font-size: 1.5rem;
+      font-size: 22px;
       margin-bottom: 15px;
-      font-weight: 600;
     }
     
     .feature-card p {
       color: var(--text-secondary);
-      font-size: 1.05rem;
     }
     
     footer {
       text-align: center;
       padding: 40px 0 20px;
       color: var(--text-secondary);
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
       margin-top: 40px;
-      font-size: 0.95rem;
     }
     
     .upload-progress {
@@ -276,8 +268,7 @@
       padding: 25px;
       margin-top: 30px;
       display: none;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
     
     .result-header {
@@ -292,7 +283,6 @@
       background: rgba(255, 255, 255, 0.05);
       border-radius: 8px;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     
     .url-container input {
@@ -301,7 +291,7 @@
       border: none;
       padding: 15px;
       color: var(--text);
-      font-size: 1rem;
+      font-size: 16px;
     }
     
     .url-container button {
@@ -329,7 +319,6 @@
       max-width: 300px;
       border-radius: 8px;
       box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     
     .preview-codes {
@@ -344,14 +333,13 @@
       margin-bottom: 15px;
       font-family: monospace;
       position: relative;
-      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     
     .preview-code-header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 10px;
-      font-size: 0.9rem;
+      font-size: 14px;
       color: var(--text-secondary);
     }
     
@@ -381,8 +369,7 @@
       background: var(--card-bg);
       border-radius: var(--border-radius);
       min-width: 200px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
     
     .stat-number {
@@ -412,7 +399,7 @@
       }
       
       .hero h2 {
-        font-size: 2.2rem;
+        font-size: 32px;
       }
       
       .upload-container {
@@ -460,7 +447,7 @@
       position: absolute;
       top: 20px;
       right: 20px;
-      color: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.03);
       font-size: 8rem;
       font-weight: 900;
       z-index: -1;
@@ -477,7 +464,7 @@
         <div class="logo-icon">
           <i class="fas fa-cloud-upload-alt"></i>
         </div>
-        <h1>Noah公益图床--CF版</h1>
+        <h1>Noah公益图床</h1>
       </div>
       <nav>
         <ul>
@@ -514,7 +501,7 @@
       <div class="upload-area" id="upload-area">
         <i class="fas fa-cloud-upload-alt upload-icon"></i>
         <h3>拖放图片到此处上传</h3>
-        <p>支持 JPG, PNG, GIF, WEBP 等格式，最大支持 5MB</p>
+        <p>支持 JPG, PNG, GIF, WEBP 等格式，最大支持 10MB</p>
         <button class="btn" id="select-btn">选择图片</button>
         <input type="file" id="file-input" accept="image/*">
       </div>
@@ -536,7 +523,7 @@
         </div>
         
         <div class="url-container">
-          <input type="text" id="image-url" value="https://cf.im.noah0932.top/images/2023/10/15/example.jpg" readonly>
+          <input type="text" id="image-url" value="https://wp-cdn.4ce.cn/images/2023/10/15/example.jpg" readonly>
           <button id="copy-url">复制链接</button>
         </div>
         
@@ -549,7 +536,7 @@
                 <span>Markdown</span>
                 <button class="copy-btn">复制</button>
               </div>
-              <div>![image](https://cf.im.noah0932.top/images/2023/10/15/example.jpg)</div>
+              <div>![image](https://wp-cdn.4ce.cn/images/2023/10/15/example.jpg)</div>
             </div>
             
             <div class="preview-code">
@@ -557,7 +544,7 @@
                 <span>HTML</span>
                 <button class="copy-btn">复制</button>
               </div>
-              <div>&lt;img src="https://cf.im.noah0932.top/images/2023/10/15/example.jpg" alt="image"&gt;</div>
+              <div>&lt;img src="https://wp-cdn.4ce.cn/images/2023/10/15/example.jpg" alt="image"&gt;</div>
             </div>
             
             <div class="preview-code">
@@ -565,7 +552,7 @@
                 <span>BBCode</span>
                 <button class="copy-btn">复制</button>
               </div>
-              <div>[img]https://cf.im.noah0932.top/images/2023/10/15/example.jpg[/img]</div>
+              <div>[img]https://wp-cdn.4ce.cn/images/2023/10/15/example.jpg[/img]</div>
             </div>
           </div>
         </div>
@@ -599,7 +586,7 @@
     </section>
     
     <footer>
-      <p>© 2025 Noah公益图床 - 完全免费的图片托管服务</p>
+      <p>© 2023 Noah公益图床 - 完全免费的图片托管服务</p>
       <p>本服务由志愿者维护，欢迎<a href="#" style="color: var(--primary); text-decoration: none;">支持我们</a></p>
     </footer>
   </div>
@@ -700,11 +687,11 @@
               };
               reader.readAsDataURL(file);
               
-              // 更新URL
+              // 更新URL - 保持原始链接不变
               const randomId = Math.random().toString(36).substring(2, 10);
               const date = new Date();
               const dateStr = `${date.getFullYear()}/${String(date.getMonth()+1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`;
-              imageUrl.value = `https://cf.im.noah0932.top/images/${dateStr}/${randomId}.${file.name.split('.').pop()}`;
+              imageUrl.value = `https://wp-cdn.4ce.cn/images/${dateStr}/${randomId}.${file.name.split('.').pop()}`;
               
               showNotification('图片上传成功！', 'success');
             }, 300);
